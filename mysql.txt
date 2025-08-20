@@ -1,0 +1,14 @@
+1) suppose we have two system a) one is server and b) other is client. and we have xamp in the server only not in the client. and client also use the same database server with the ip.
+
+so we need to give them access like 
+
+GRANT ALL PRIVILEGES ON paytm_park.* TO 'root'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+2)
+
+root	%	global	ALL PRIVILEGES	Yes	Edit privileges Edit privileges	Export Export
+wildcard: paytm_park	ALL PRIVILEGES	Yes	Edit privileges Edit privileges	Export Export
+	root	127.0.0.1	global	ALL PRIVILEGES	Yes	Edit privileges Edit privileges	Export Export
+	root	::1	global	ALL PRIVILEGES	Yes	Edit privileges Edit privileges	Export Export
+	root	localhost	global	ALL PRIVILEGES	Yes	Edit privileges Edit privileges	Export Export
